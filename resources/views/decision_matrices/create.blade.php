@@ -15,8 +15,9 @@
         </div>
 
         <div class="form-group">
-            <label for="harga">Harga:</label>
-            <input type="number" name="harga" id="harga" class="form-control" value="{{ old('harga') }}" required>
+            <label for="harga">Harga (3. Sangat Mahal 5.Sangat 7.Lengkap Tersedia 9.Bagus
+            ):</label>
+            <input type="number" name="harga" id="harga" class="form-control" value="{{ old('harga') }}" placeholder="" required>
             @error('harga')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
